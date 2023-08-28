@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230828 23:04:11.734" rpa="false" schemaversion="4">
+<suite id="s1" name="Bai1" source="c:\Users\LAM\Documents\workplace\homework\testcases\bai1.robot">
+<test id="s1-t1" name="bai3" line="28">
+<kw name="Open webpage google" library="common_keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${GOOGLE PAGE}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230828 23:04:11.956" level="INFO">Opening browser 'CHROME' to base url 'https://google.com'.</msg>
+<status status="PASS" starttime="20230828 23:04:11.956" endtime="20230828 23:04:14.698"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230828 23:04:14.698" endtime="20230828 23:04:14.815"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:04:19.816" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230828 23:04:14.816" endtime="20230828 23:04:19.816"/>
+</kw>
+<status status="PASS" starttime="20230828 23:04:11.955" endtime="20230828 23:04:19.817"/>
+</kw>
+<kw name="search MSB" library="google_MSB">
+<arg>${MSB_keyword}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_google}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 23:04:19.818" level="INFO">Clicking element '//textarea[@name="q"]'.</msg>
+<status status="PASS" starttime="20230828 23:04:19.817" endtime="20230828 23:04:19.861"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_google}</arg>
+<arg>${google_keyword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 23:04:19.862" level="INFO">Typing text 'MSB' into text field '//textarea[@name="q"]'.</msg>
+<status status="PASS" starttime="20230828 23:04:19.861" endtime="20230828 23:04:19.916"/>
+</kw>
+<status status="PASS" starttime="20230828 23:04:19.817" endtime="20230828 23:04:19.917"/>
+</kw>
+<kw name="Send ENTER key" library="google_MSB">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_google}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230828 23:04:19.918" level="INFO">Sending key(s) ('ENTER',) to //textarea[@name="q"] element.</msg>
+<msg timestamp="20230828 23:04:20.206" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230828 23:04:20.206" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230828 23:04:19.918" endtime="20230828 23:04:22.280"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:04:24.280" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:04:22.280" endtime="20230828 23:04:24.280"/>
+</kw>
+<status status="PASS" starttime="20230828 23:04:19.917" endtime="20230828 23:04:24.280"/>
+</kw>
+<kw name="Choice 1st MSB area" library="google_MSB">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MSB_area1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 23:04:24.281" level="INFO">Clicking element '//div[@id="rso"]/div[1]//a/*[text()="MSB"]'.</msg>
+<status status="PASS" starttime="20230828 23:04:24.281" endtime="20230828 23:04:46.802"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:04:48.802" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:04:46.802" endtime="20230828 23:04:48.802"/>
+</kw>
+<status status="PASS" starttime="20230828 23:04:24.281" endtime="20230828 23:04:48.802"/>
+</kw>
+<kw name="Close by button X" library="google_MSB">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${X_button}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230828 23:04:48.803" endtime="20230828 23:04:48.824"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${X_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 23:04:48.825" level="INFO">Clicking element '//img[@src="/documents/20121/326617/Web_565x273.png/3f82730c-7017-c689-ca8d-5b87ef92e9a8"]/ancestor::a/following-sibling::span'.</msg>
+<status status="PASS" starttime="20230828 23:04:48.824" endtime="20230828 23:04:48.867"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:04:50.867" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:04:48.867" endtime="20230828 23:04:50.867"/>
+</kw>
+<status status="PASS" starttime="20230828 23:04:48.803" endtime="20230828 23:04:50.867"/>
+</kw>
+<kw name="Verify text Welcome MSB" library="google_MSB">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${label_WelcomeMSB}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230828 23:04:50.878" level="INFO">Current page contains element '//div[@class="main-banner-section"]//div[text()="Chọn thẻ phù hợp với bạn"]'.</msg>
+<status status="PASS" starttime="20230828 23:04:50.868" endtime="20230828 23:04:50.878"/>
+</kw>
+<status status="PASS" starttime="20230828 23:04:50.867" endtime="20230828 23:04:50.878"/>
+</kw>
+<status status="PASS" starttime="20230828 23:04:11.944" endtime="20230828 23:04:50.879"/>
+</test>
+<status status="PASS" starttime="20230828 23:04:11.737" endtime="20230828 23:04:50.880"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Bai1">Bai1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
